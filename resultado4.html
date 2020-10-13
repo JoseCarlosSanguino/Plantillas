@@ -1,526 +1,512 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>001_cabello</title>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
-</head>
-<body>
-    <style>
-    html,body{
-
-  overflow-x:hidden;
-  font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
-
-}
-@import url(https://fonts.googleapis.com/css?family=Open+Sans);
-.textVideo p:first-child {
-  color: rgb(25, 62, 146);
-  font-size: 2em;
-  line-height: 1;
-  margin-top: 1vh;
-  font-weight: bold;
-
-}
-.textVideo p {
-  font-size: 1.5em;
-  line-height: 1
-
-}
-.textVideo a {
-  font-weight: 700;font-size: 1.5em;display: flex ;align-items: center;justify-content: center;
-
-}
-.infoEmpresa p{
-  color: rgb(89, 94, 97);font-size: 0.75em;line-height:1em;text-align: center;margin-left: -20vh;
-}
-.position2 p:first-child{
-  font-size: 1.5em;line-height:1em;
-  margin-right: 8vh;
-  margin-left: 9vh;
-}
-.position2 p{
-  font-size: 1em;line-height:1em;
-  margin-right: 8vh;
-  margin-left: 9vh;
-}
-
-.position2 ul{
-  color: rgb(25, 62, 146);font-size: 2.5em;line-height:1em;
-  margin-right: 8vh;
-  margin-left: 9vh;
-}
-.position2 a{
-  font-weight: 700;font-size: 1.5em;display: flex ;align-items: center;justify-content: center;
-  margin-right: 8vh;
-  margin-left: 9vh;
-}
-.textImagen p {
-font-weight: 700;line-height: 102%;margin-left: 5vw;top: 6vw;
-           color:white;position:absolute;font-size: 3.5vw;
-}
-
-.satisfacion1 p:first-child {
-color: rgb(25, 62, 146);font-size: 1.5em;line-height:1em;margin-top: 4vh;margin-left: -15vh;
-}
-.satisfacion1 p{
-color: rgb(25, 62, 146);font-size: 1.5em;line-height:1em;margin-top:-2vh;margin-left: -15vh;
-}
-
-.gris{
-  background-color:rgb(229, 229, 229);
-}
-
-.oferta p{
-  font-size: 1.5em;line-height:1em;margin-top: 3vh;margin-left: 3vh;
-}
-
-.cajaDia{
-  background-color: black;
-  display: flex;justify-content: center;
-  align-items: center;color:white;
-  width: 73px;
-  height: 56px;
-  overflow:hidden;
-  padding:20px;
-  -webkit-border-radius: 10px;
-  border-radius: 10px;
-  margin-top: 1vh;
-
-  font-size: 2em;
-}
-
-.textoDia{
-  margin-top: 7.5vh;margin-left:-5vh;display: flex;
-              color:black;font-size: 0.75em;
-}
-
-.cajaHoras{
-  background-color: black;
-  display: flex;justify-content: center;
-  align-items: center;color:white;
-  width: 73px;
-  height: 56px;
-  overflow:hidden;
-  padding:20px;
-  -webkit-border-radius: 10px;
-  border-radius: 10px;
-  margin-top: 1vh;
-  margin-left: 4vh;
-  font-size: 2em;
-}
-
-.textoHoras{
-  margin-top: 7.5vh;margin-left:-6vh;display: flex;
-              color:black;font-size: 0.75em;
-}
-
-.cajaMinutos{
-  background-color: black;
-  display: flex;justify-content: center;
-  align-items: center;color:white;
-  width: 73px;
-  height: 56px;
-  overflow:hidden;
-  padding:20px;
-  -webkit-border-radius: 10px;
-  border-radius: 10px;
-  margin-top: 1vh;
-   margin-left: 3vh;
-  font-size: 2em;
-}
-.textoMinutos{
-  margin-top: 7.5vh;margin-left:-6vh;display: flex;
-              color:black;font-size: 0.75em;
-}
-
-.cajaSegundos{
-  background-color: black;
-  display: flex;justify-content: center;
-  align-items: center;color:white;
-  width: 73px;
-  height: 56px;
-  overflow:hidden;
-  padding:20px;
-  -webkit-border-radius: 10px;
-  border-radius: 10px;
-  margin-top: 1vh;
-   margin-left: 3vh;
-  font-size: 2em;
-}
-.textoSegundos{
-  margin-top: 7.5vh;margin-left:-7vh;display: flex;
-              color:black;font-size: 0.75em;
-}
-
-.imgProducto{
-margin-top: 3vh;height: 30em;
-}
-
-.imgProducto2{
-margin-top: -700px;
-
-}
-
-.imgCalidad{
-  width: 155px;
-  height: 73px;
-
-    
-  
-}
-
-.imgSatisfacion{
-  margin-left: 25vh;
-}
-@media only screen and (min-width: 981px) and (max-width: 1299px) {
-
-  .textoDia{
-  margin-top: 8.5vh;margin-left:-6vh;display: flex;
-              color:black;font-size: 0.75em;
-}
-.textoHoras{
-  margin-top: 8.5vh;margin-left:-7vh;display: flex;
-              color:black;font-size: 0.75em;
-}
-.textoMinutos{
-  margin-top: 8.5vh;margin-left:-8vh;display: flex;
-              color:black;font-size: 0.75em;
-}
-.textoSegundos{
-  margin-top: 8.5vh;margin-left:-8.5vh;display: flex;
-              color:black;font-size: 0.75em;
-}
-}
-@media only screen and (min-width: 610px) and (max-width: 980px) {
-
-  .textoDia{
-  margin-top: 8.5vh;margin-left:-6vh;display: flex;
-              color:black;font-size: 0.75em;
-}
-.textoHoras{
-  margin-top: 8.5vh;margin-left:-7vh;display: flex;
-              color:black;font-size: 0.75em;
-}
-.textoMinutos{
-  margin-top: 8.5vh;margin-left:-8vh;display: flex;
-              color:black;font-size: 0.75em;
-}
-.textoSegundos{
-  margin-top: 8.5vh;margin-left:-8.5vh;display: flex;
-              color:black;font-size: 0.75em;
-}
-  .position2 p:first-child{
-  font-size: 1.5em;line-height:1em;
-  margin-right: 1vh;
-  margin-left: 1vh;
-}
-.position2 p{
-  font-size: 1em;line-height:1em;
-  margin-right: 1vh;
-  margin-left: 1vh;
-}
-.position2 ul{
-  color: rgb(25, 62, 146);font-size: 2.5em;line-height:1em;
-  margin-right: 1vh;
-  margin-left: 1vh;
-}
-.position2 a{
-  font-weight: 700;font-size: 1.5em;display: flex ;align-items: center;justify-content: center;
-  margin-right: 1vh;
-  margin-left: 1vh;
-}
-
-.satisfacion1 p:first-child {
-color: rgb(25, 62, 146);font-size: 1.5em;line-height:1em;margin-top: 4vh;margin-left: 1vh;
-}
-.satisfacion1 p{
-color: rgb(25, 62, 146);font-size: 1.5em;line-height:1em;margin-top:-2vh;margin-left: 1vh;
-}
-
-.imgSatisfacion{
-  margin-left: 0vh;
-}
-.imgProducto2{
-margin-top: -100px;
-margin-left: -400px;
-}
-.imgProducto{
-  margin-left: 10vh;
-}
-}
-
-@media only screen and (max-width: 600px) {
-
-  .textoDia{
-  margin-top: 8.5vh;margin-left:-6vh;display: flex;
-              color:black;font-size: 0.75em;
-}
-.textoHoras{
-  margin-top: 8.5vh;margin-left:-7vh;display: flex;
-              color:black;font-size: 0.75em;
-}
-.textoMinutos{
-  margin-top: 8.5vh;margin-left:-8vh;display: flex;
-              color:black;font-size: 0.75em;
-}
-.textoSegundos{
-  margin-top: 8.5vh;margin-left:-8.5vh;display: flex;
-              color:black;font-size: 0.75em;
-}
-  .position{
-    order: -1;
-    flex: 1 0 100%;
-    flex-wrap:wrap;
-    margin-left: 8vh;
-
-  }
-  .position2{
-   margin-left: 0vh;
-
-  }
-  .imgProducto{
-    margin-left: -3vh;
-  }
-  .imgSatisfacion{
-  margin-left: 0vh;
-}
-.satisfacion1 p:first-child {
-color: rgb(25, 62, 146);font-size: 1.5em;line-height:1em;margin-top: 4vh;margin-left: 1vh;
-}
-.satisfacion1 p{
-color: rgb(25, 62, 146);font-size: 1.5em;line-height:1em;margin-top:-2vh;margin-left: 1vh;
-}
-}
-.infoEmpresa{
-    margin-top: 1vh;
-    height: 13vh;
-    margin-left:20vh;
-
-  }
-@media only screen and (min-width: 1300px) {
-  .imgCalidad{
-    margin-left: 65vh;
-  }
-  .infoEmpresa{
-    margin-top: 2vh;
-    margin-left: -40vh;
-
-  }
-  .textoDia{
-  margin-top: 8.5vh;margin-left:-5vh;display: flex;
-              color:black;font-size: 0.75em;
-}
-.textoHoras{
-  margin-top: 8.5vh;margin-left:-6vh;display: flex;
-              color:black;font-size: 0.75em;
-}
-.textoMinutos{
-  margin-top: 8.5vh;margin-left:-7vh;display: flex;
-              color:black;font-size: 0.75em;
-}
-.textoSegundos{
-  margin-top: 8.5vh;margin-left:-7vh;display: flex;
-              color:black;font-size: 0.75em;
-}
-}
-
-
-
-
-
- </style>
-
- <div class="container">
-    
-    <div class="row textImagen">
-        
-    	<div class="col-sm-12 d-flex justify-content-center text-center">
-           <img src="/Prueba4.jpg" style="position: relative;"  class="img-fluid">
-    	</div>
-          <p >No más puntas abiertas,<br>¡no más caída!</p>
-    </div>
-    <br>
-    <div class="row d-flex" >
-    	 
-
-        <div class="  col-lg-7 " >
-      	 <div class="embed-responsive embed-responsive-21by9" >
-           <iframe  class="embed-responsive-item" src="https://player.vimeo.com/video/446962586?embedparameter=value" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen    >
-           </iframe>
+   <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>001_cabello</title>
+      <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+   </head>
+   <body>
+      <style>
+         html,body{
+         overflow-x:hidden;
+         font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+         }
+         @import url(https://fonts.googleapis.com/css?family=Open+Sans);
+         .textVideo p:first-child {
+         color: rgb(25, 62, 146);
+         font-size: 2em;
+         line-height: 1;
+         margin-top: 1vh;
+         font-weight: bold;
+         }
+         .textVideo p {
+         font-size: 1.5em;
+         line-height: 1
+         }
+         .textVideo a {
+         font-weight: 700;font-size: 1.5em;display: flex ;align-items: center;justify-content: center;
+         }
+         .infoEmpresa p{
+         color: rgb(89, 94, 97);font-size: 0.75em;line-height:1em;text-align: center;margin-left: -20vh;
+         }
+         .position2 p:first-child{
+         font-size: 1.5em;line-height:1em;
+         margin-right: 8vh;
+         margin-left: 9vh;
+         }
+         .position2 p{
+         font-size: 1em;line-height:1em;
+         margin-right: 8vh;
+         margin-left: 9vh;
+         }
+         .position2 ul{
+         color: rgb(25, 62, 146);font-size: 2.5em;line-height:1em;
+         margin-right: 8vh;
+         margin-left: 9vh;
+         }
+         .position2 a{
+         font-weight: 700;font-size: 1.5em;display: flex ;align-items: center;justify-content: center;
+         margin-right: 8vh;
+         margin-left: 9vh;
+         }
+         .textImagen p {
+         font-weight: 700;line-height: 102%;margin-left: 5vw;top: 6vw;
+         color:white;position:absolute;font-size: 3.5vw;
+         }
+         .satisfacion1 p:first-child {
+         color: rgb(25, 62, 146);font-size: 1.5em;line-height:1em;margin-top: 4vh;margin-left: -15vh;
+         }
+         .satisfacion1 p{
+         color: rgb(25, 62, 146);font-size: 1.5em;line-height:1em;margin-top:-2vh;margin-left: -15vh;
+         }
+         .gris{
+         background-color:rgb(229, 229, 229);
+         }
+         .oferta p{
+         font-size: 1.5em;line-height:1em;margin-top: 4vh;margin-left: 3vh;
+         }
+         .cajaDia{
+         background-color: black;
+         display: flex;justify-content: center;
+         align-items: center;color:white;
+         width: 73px;
+         height: 56px;
+         overflow:hidden;
+         padding:20px;
+         -webkit-border-radius: 10px;
+         border-radius: 10px;
+         margin-top: 1vh;
+         font-size: 2em;
+         }
+         .textoDia{
+         margin-top: 7.5vh;margin-left:-5vh;display: flex;
+         color:black;font-size: 0.75em;
+         }
+         .cajaHoras{
+         background-color: black;
+         display: flex;justify-content: center;
+         align-items: center;color:white;
+         width: 73px;
+         height: 56px;
+         overflow:hidden;
+         padding:20px;
+         -webkit-border-radius: 10px;
+         border-radius: 10px;
+         margin-top: 1vh;
+         margin-left: 25px;
+         font-size: 2em;
+         }
+         .textoHoras{
+         margin-top: 7.5vh;margin-left:-6vh;display: flex;
+         color:black;font-size: 0.75em;
+         }
+         .cajaMinutos{
+         background-color: black;
+         display: flex;justify-content: center;
+         align-items: center;color:white;
+         width: 73px;
+         height: 56px;
+         overflow:hidden;
+         padding:20px;
+         -webkit-border-radius: 10px;
+         border-radius: 10px;
+         margin-top: 1vh;
+         margin-left: 22px;
+         font-size: 2em;
+         }
+         .textoMinutos{
+         margin-top: 7.5vh;margin-left:-6vh;display: flex;
+         color:black;font-size: 0.75em;
+         }
+         .cajaSegundos{
+         background-color: black;
+         display: flex;justify-content: center;
+         align-items: center;color:white;
+         width: 73px;
+         height: 56px;
+         overflow:hidden;
+         padding:20px;
+         -webkit-border-radius: 10px;
+         border-radius: 10px;
+         margin-top: 1vh;
+         margin-left: 17px;
+         font-size: 2em;
+         }
+         .textoSegundos{
+         margin-top: 7.5vh;margin-left:-7vh;display: flex;
+         color:black;font-size: 0.75em;
+         }
+         .imgProducto{
+         margin-top: 3vh;height: auto;
+         }
+         .imgProducto2{
+         margin-top: -75vh;
+         }
+         .imgCalidad{
+         width: 155px;
+         height: 73px;
+         }
+         .imgSatisfacion{
+         margin-left: 25vh;
+         }
+         @media only screen and (min-width: 981px) and (max-width: 1299px) {
+         .textoDia{
+         margin-top: 8.5vh;margin-left:-6vh;display: flex;
+         color:black;font-size: 0.75em;
+         }
+         .textoHoras{
+         margin-top: 8.5vh;margin-left:-7vh;display: flex;
+         color:black;font-size: 0.75em;
+         }
+         .textoMinutos{
+         margin-top: 8.5vh;margin-left:-8vh;display: flex;
+         color:black;font-size: 0.75em;
+         }
+         .textoSegundos{
+         margin-top: 8.5vh;margin-left:-8.5vh;display: flex;
+         color:black;font-size: 0.75em;
+         }
+         .imgProducto2{
+         margin-top: -85vh;
+         margin-left: -3vh;
+         }
+         }
+         @media only screen and (min-width: 601px) and (max-width: 980px) {
+         .position{
+         order: -1;
+         flex: 1 0 100%;
+         flex-wrap:wrap;
+         margin-left: 8vh;
+         }
+         .textoDia{
+         margin-top: 8.5vh;margin-left:-6vh;display: flex;
+         color:black;font-size: 0.75em;
+         }
+         .textoHoras{
+         margin-top: 8.5vh;margin-left:-7vh;display: flex;
+         color:black;font-size: 0.75em;
+         }
+         .textoMinutos{
+         margin-top: 8.5vh;margin-left:-8vh;display: flex;
+         color:black;font-size: 0.75em;
+         }
+         .textoSegundos{
+         margin-top: 8.5vh;margin-left:-8.5vh;display: flex;
+         color:black;font-size: 0.75em;
+         }
+         .position2 p:first-child{
+         font-size: 1.5em;line-height:1em;
+         margin-right: 1vh;
+         margin-left: 1vh;
+         }
+         .position2 p{
+         font-size: 1em;line-height:1em;
+         margin-right: 1vh;
+         margin-left: 1vh;
+         }
+         .position2 ul{
+         color: rgb(25, 62, 146);font-size: 2.5em;line-height:1em;
+         margin-right: 1vh;
+         margin-left: 1vh;
+         }
+         .position2 a{
+         font-weight: 700;font-size: 1.5em;display: flex ;align-items: center;justify-content: center;
+         margin-right: 1vh;
+         margin-left: 1vh;
+         }
+         .satisfacion1 p:first-child {
+         color: rgb(25, 62, 146);font-size: 1.5em;line-height:1em;margin-top: 4vh;margin-left: 1vh;
+         }
+         .satisfacion1 p{
+         color: rgb(25, 62, 146);font-size: 1.5em;line-height:1em;margin-top:-2vh;margin-left: 1vh;
+         }
+         .imgSatisfacion{
+         margin-left: 0vh;
+         }
+         .imgProducto2{
+         margin-top: -100vh;
+         margin-left: 5vh;
+         }
+         .imgProducto{
+         margin-left: 0vh;
+         }
+         }
+         @media only screen and (max-width: 600px) {
+         .textoDia{
+         margin-top: 8.5vh;margin-left:-6vh;display: flex;
+         color:black;font-size: 0.75em;
+         }
+         .textoHoras{
+         margin-top: 8.5vh;margin-left:-7vh;display: flex;
+         color:black;font-size: 0.75em;
+         }
+         .textoMinutos{
+         margin-top: 8.5vh;margin-left:-8vh;display: flex;
+         color:black;font-size: 0.75em;
+         }
+         .textoSegundos{
+         margin-top: 8.5vh;margin-left:-8.5vh;display: flex;
+         color:black;font-size: 0.75em;
+         }
+         .position{
+         order: -1;
+         flex: 1 0 100%;
+         flex-wrap:wrap;
+         margin-left: 8vh;
+         }
+         .position2{
+         margin-left: 0vh;
+         }
+         .imgProducto{
+         margin-left: -3vh;
+         }
+         .imgProducto2 {
+         margin-top: -100vh;
+         }
+         .imgSatisfacion{
+         margin-left: 0vh;
+         }
+         .satisfacion1 p:first-child {
+         color: rgb(25, 62, 146);font-size: 1.5em;line-height:1em;margin-top: 4vh;margin-left: 1vh;
+         }
+         .satisfacion1 p{
+         color: rgb(25, 62, 146);font-size: 1.5em;line-height:1em;margin-top:-2vh;margin-left: 1vh;
+         }
+         }
+         .infoEmpresa{
+         margin-top: 1vh;
+         height: 13vh;
+         margin-left:20vh;
+         }
+         @media only screen and (max-width: 400px) {
+         .textoDia{
+         margin-top: 10.5vh;margin-left:-7vh;display: flex;
+         color:black;font-size: 0.75em;
+         }
+         .textoHoras{
+         margin-top: 10.5vh;margin-left:-8vh;display: flex;
+         color:black;font-size: 0.75em;
+         }
+         .textoMinutos{
+         margin-top: 10.5vh;margin-left:-9.5vh;display: flex;
+         color:black;font-size: 0.75em;
+         }
+         .textoSegundos{
+         margin-top: 10.5vh;margin-left:-10.5vh;display: flex;
+         color:black;font-size: 0.75em;
+         }
+         .position{
+         order: -1;
+         flex: 1 0 100%;
+         flex-wrap:wrap;
+         margin-left: 8vh;
+         }
+         .position2{
+         margin-left: 0vh;
+         }
+         .imgProducto{
+         margin-left: -3vh;
+         }
+         .imgProducto2 {
+         margin-top: -75vh;
+         margin-left: -8vh;
+         }
+         .imgSatisfacion{
+         margin-left: 0vh;
+         }
+         .satisfacion1 p:first-child {
+         color: rgb(25, 62, 146);font-size: 1.5em;line-height:1em;margin-top: 4vh;margin-left: 1vh;
+         }
+         .satisfacion1 p{
+         color: rgb(25, 62, 146);font-size: 1.5em;line-height:1em;margin-top:-2vh;margin-left: 1vh;
+         }
+         .position2 ul{
+         color: rgb(25, 62, 146);font-size: 2em;line-height:1em;
+         margin-right: 8vh;
+         margin-left: 9vh;
+         }
+         }
+         .infoEmpresa{
+         margin-top: 1vh;
+         height: 13vh;
+         margin-left:20vh;
+         }
+         @media only screen and (min-width: 1300px) {
+         .imgCalidad{
+         margin-left: 65vh;
+         }
+         .infoEmpresa{
+         margin-top: 2vh;
+         margin-left: -40vh;
+         }
+         .imgProducto2 {
+         margin-top: -75vh;
+         }
+         .textoDia{
+         margin-top: 8.5vh;margin-left:-5vh;display: flex;
+         color:black;font-size: 0.75em;
+         }
+         .textoHoras{
+         margin-top: 8.5vh;margin-left:-6vh;display: flex;
+         color:black;font-size: 0.75em;
+         }
+         .textoMinutos{
+         margin-top: 8.5vh;margin-left:-7vh;display: flex;
+         color:black;font-size: 0.75em;
+         }
+         .textoSegundos{
+         margin-top: 8.5vh;margin-left:-7vh;display: flex;
+         color:black;font-size: 0.75em;
+         }
+         }
+      </style>
+      <div class="container">
+         <div class="row textImagen">
+            <div class="col-sm-12 d-flex justify-content-center text-center">
+               <img src="/Prueba4.jpg" style="position: relative;"  class="img-fluid">
+            </div>
+            <p >No más puntas abiertas,<br>¡no más caída!</p>
          </div>
-        </div>
-        <br>
-       <div class=" col-lg-4 justify-content-center text-center" >
-       	<div class="textVideo">
-         <p > De la mano de una experta, aprende a cuidar tu pelo este verano.
-          </p>
-          <p>Aprende con Vero los secretos para tener un pelo sano, fuerte y sin puntas abiertas</p>
-          <a class="btn btn-success"  href="#" role="button" >¡Comprar!</a>
+         <br>
+         <div class="row d-flex" >
+            <div class="  col-lg-7 " >
+               <div class="embed-responsive embed-responsive-21by9" >
+                  <iframe  class="embed-responsive-item" src="https://player.vimeo.com/video/446962586?embedparameter=value" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen    >
+                  </iframe>
+               </div>
+            </div>
+            <br>
+            <div class=" col-lg-4 justify-content-center text-center" >
+               <div class="textVideo">
+                  <p > De la mano de una experta, aprende a cuidar tu pelo este verano.
+                  </p>
+                  <p>Aprende con Vero los secretos para tener un pelo sano, fuerte y sin puntas abiertas</p>
+                  <a class="btn btn-success"  href="#" role="button" >¡Comprar!</a>
+               </div>
+            </div>
+         </div>
+         <hr>
+         <div class="row" >
+            <div  class=" col-lg-7 justify-content-center  position2" >
+               <p>Dale la fuerza que necesita tu pelo para este verano.</br>Nutre profundamente tu pelo también desde adentro.
+                  <b>¡Siéntete segura!</b>
+               </p>
+               <ul>
+                  <li>Shampoo </li>
+                  <li>Acondicionador </li>
+                  <li>Biotina  </li>
+               </ul>
+               <p><b>Champú Anticaída SATINIQUE™</b><br>Ideal para todo tipo de cabellos, especialmente los cabellos frágiles, finos o escasos. Con ENERJUVE, que ayuda a restaurar el estado natural y saludable de tu cabello. Incluye una mezcla de productos botánicos con ginseng, extracto de Eclipta Alba y extracto de hoja de morera.</p>
+               <p><b>Acondicionador Anticaída SATINIQUE™</b><br>Perfecto para reducir la posibilidad de rotura del cabello frágil, fino y debilitado. Contiene ENERJUVE para devolverle al cabello su estado natural saludable. La mezcla contiene ginseng y extracto de hoja de morera para estimular la circulación y reducir la pérdida de cabello.</p>
+               <p><b>Biotina C Plus NUTRLITE™</b><br>Este complemento alimenticio contiene biotina, vitamina C y colágeno.La biotina contribuye al mantenimiento de un cabello normal. La vitamina C contribuye a una formación normal de colágeno para un funcionamiento adecuado de la piel.</p>
+               <a class="btn btn-success"  href="#" role="button" >¡Lo quiero ya!</a>
+            </div>
+            <p></p>
+            <div class="  col-lg-5 justify-content-center  position" >
+               <img class="img-fluid imgProducto" src="https://us-ms.gr-cdn.com/getresponse-wCxnR/photos/cfd1722a-6f2c-4a0d-91a9-71507312e5aa.png" alt="" height="auto" / >
+               <img class="img-fluid imgProducto2" src="https://us-ms.gr-cdn.com/getresponse-wCxnR/photos/cdc77ef4-2424-4e3a-83f1-4b2fc9a0e270.png" alt="" width="170" height="144"/>
+               <div>
+               </div>
+            </div>
+         </div>
+         <hr>
+         <div class="row" >
+            <div class=" d-flex col-lg-6 justify-content-center " >
+               <img class="img-fluid imgSatisfacion" src="https://us-ms.gr-cdn.com/getresponse-wCxnR/photos/fda38676-563f-4ccd-af08-7d601fd2be94.png" alt=""  width="213" height="143">
+            </div>
+            <br>
+            <div class=" d-flex col-lg-6 justify-content-center text-center" >
+               <div class="satisfacion1">
+                  <p><b>¡SATISFACCIÓN 100% GARANTIZADA</b></p>
+                  <p><b>DURANTE 90 DÍAS!</b></p>
+               </div>
+            </div>
+         </div>
+         <br>
+         <div class="row d-flex gris" >
+            <div class=" d-flex col-lg-7 justify-content-center oferta" >
+               <p><b>¡No pierdas tiempo! Esta oferta termina en:</b></p>
+            </div>
+            <div class="d-flex  col-lg-4  justify-content-center ">
+               <p id="days" name="days" class="cajaDia">
+                  00
+               </p>
+               <p class="textoDia">DÍAS</p>
+               <p id="hours" name="hours" class="cajaHoras">
+                  00
+               </p>
+               <p class="textoHoras">HORAS</p>
+               <p id="minutes" name="minutes"class="cajaMinutos">
+                  00
+               </p>
+               <p class="textoMinutos">MINUTOS</p>
+               <p id="seconds" name="seconds" class="cajaSegundos">
+                  00
+               </p>
+               <p class="textoSegundos">SEGUNDOS</p>
+            </div>
+            <br>
+         </div>
       </div>
-
-       </div>
-       
-   </div>  
-
-  <hr>
-   
-
-<div class="row" >
-    	 
-
-        <div  class=" col-lg-7 justify-content-center  position2" >
-      	 <p>Dale la fuerza que necesita tu pelo para este verano.</br>Nutre profundamente tu pelo también desde adentro.
-      	 <b>¡Siéntete segura!</b></p>
-         <ul>
-      	 <li>Shampoo </li>
-      	 <li>Acondicionador </li>
-      	 <li>Biotina  </li>
-        </ul>
-      	 
-          <p><b>Champú Anticaída SATINIQUE™</b><br>Ideal para todo tipo de cabellos, especialmente los cabellos frágiles, finos o escasos. Con ENERJUVE, que ayuda a restaurar el estado natural y saludable de tu cabello. Incluye una mezcla de productos botánicos con ginseng, extracto de Eclipta Alba y extracto de hoja de morera.</p>
-      	 
-      	 <p><b>Acondicionador Anticaída SATINIQUE™</b><br>Perfecto para reducir la posibilidad de rotura del cabello frágil, fino y debilitado. Contiene ENERJUVE para devolverle al cabello su estado natural saludable. La mezcla contiene ginseng y extracto de hoja de morera para estimular la circulación y reducir la pérdida de cabello.</p>
-
-      	 <p><b>Biotina C Plus NUTRLITE™</b><br>Este complemento alimenticio contiene biotina, vitamina C y colágeno.La biotina contribuye al mantenimiento de un cabello normal. La vitamina C contribuye a una formación normal de colágeno para un funcionamiento adecuado de la piel.</p>
-        <a class="btn btn-success"  href="#" role="button" >¡Lo quiero ya!</a>
-        </div>
-        <p></p>
-       <div class="  col-lg-4 justify-content-center  position" >
-       	<img class="img-fluid imgProducto" src="https://us-ms.gr-cdn.com/getresponse-wCxnR/photos/cfd1722a-6f2c-4a0d-91a9-71507312e5aa.png" alt="" height="80vh" / >
-       	<img class="img-fluid imgProducto2" src="https://us-ms.gr-cdn.com/getresponse-wCxnR/photos/cdc77ef4-2424-4e3a-83f1-4b2fc9a0e270.png" alt="" width="170" height="144"/>
-       	<div>
-         
+      </div> 
+      <div class="row" >
+         <div class=" d-flex col-lg-6 justify-content-center " >
+            <img class="img-fluid imgCalidad" src="https://us-ms.gr-cdn.com/getresponse-wCxnR/photos/1db81f16-7aa5-4020-b91d-31c77c409df1.png" alt="" width="155" height="73">
+         </div>
+         <div class=" d-flex col-lg-6 justify-content-center " >
+            <div class="infoEmpresa">
+               <p>ACOMDEPER S.A.  I  Teléfono: (+34) 652790629<br>
+                  Barrio Las Veneras, 7A 39478 Arce-Piélagos<br>
+                  Cantabria - España
+               </p>
+            </div>
+         </div>
       </div>
-
-       </div>
-       
-   </div>  
-
-<hr>
-
-
-<div class="row" >
-    	 
-
-        <div class=" d-flex col-lg-6 justify-content-center " >
-      	 <img class="img-fluid imgSatisfacion" src="https://us-ms.gr-cdn.com/getresponse-wCxnR/photos/fda38676-563f-4ccd-af08-7d601fd2be94.png" alt=""  width="213" height="143">
-        </div>
-        <br>
-       <div class=" d-flex col-lg-6 justify-content-center text-center" >
-       	<div class="satisfacion1"><p><b>¡SATISFACCIÓN 100% GARANTIZADA</b></p>
-           <p><b>DURANTE 90 DÍAS!</b></p>
-          
       </div>
-
-       </div>
-       
-   </div>  
-   <br>
-
-   <div class="row d-flex gris" >
-    	 
-
-        <div class=" d-flex col-lg-7 justify-content-center oferta" >
-      	 <p><b>¡No pierdas tiempo! Esta oferta termina en:</b></p>
-        </div>
-        <div class="d-flex  col-lg-4  justify-content-center ">
-      	 <p id="days" name="days" class="cajaDia">
-                00
-             </p> 
-              <p class="textoDia">DÍAS</p>
-
-             <p id="hours" name="hours" class="cajaHoras">
-                00
-             </p>
-             <p class="textoHoras">HORAS</p>
-
-             <p id="minutes" name="minutes"class="cajaMinutos">
-                00
-             </p> 
-             <p class="textoMinutos">MINUTOS</p>
-
-             <p id="seconds" name="seconds" class="cajaSegundos">
-                00
-             </p> 
-             <p class="textoSegundos">SEGUNDOS</p>
-
-             
-        
-        </div>
-
-        <br>
-      
-          
-      </div>
-
-       </div>
-       
-   </div> 
-
-    
-    <div class="row" >
-    	 
-
-        <div class=" d-flex col-lg-6 justify-content-center " >
-      	 <img class="img-fluid imgCalidad" src="https://us-ms.gr-cdn.com/getresponse-wCxnR/photos/1db81f16-7aa5-4020-b91d-31c77c409df1.png" alt="" width="155" height="73">
-        </div>
-        
-       <div class=" d-flex col-lg-6 justify-content-center " >
-       	<div class="infoEmpresa"><p>ACOMDEPER S.A.  I  Teléfono: (+34) 652790629<br>
-            		Barrio Las Veneras, 7A 39478 Arce-Piélagos<br>
-            Cantabria - España</p>
-          
-      </div>
-
-       </div>
-       
-   </div> 
- </div>
-   <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
-</body>
+      <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"></script>
+      <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
+      <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+   </body>
 </html>
 <script>
-$( document ).ready( function() {
-   var fecha = new Date();
-    var dia = fecha.getDate() + 1;
-    var mes = fecha.getMonth()+1;
-    var anio = fecha.getFullYear();
-    
-    var fechaRestar = new Date(""+mes+"/"+dia+"/"+anio + " "+"00:00:00");
-
-    /****************************************************************/
-
-    const MILLISECONDS_OF_A_SECOND = 1000;
-    const MILLISECONDS_OF_A_MINUTE = MILLISECONDS_OF_A_SECOND * 60;
-    const MILLISECONDS_OF_A_HOUR = MILLISECONDS_OF_A_MINUTE * 60;
-    const MILLISECONDS_OF_A_DAY = MILLISECONDS_OF_A_HOUR * 24;
-
-/********************************************************/
-function updateCountdown() {
-    // Calcs
-    const NOW = new Date()
-    const DURATION = fechaRestar - NOW;
-    
-    const REMAINING_DAYS = Math.floor(DURATION / MILLISECONDS_OF_A_DAY);
-    const REMAINING_HOURS = Math.floor((DURATION % MILLISECONDS_OF_A_DAY) / MILLISECONDS_OF_A_HOUR);
-    const REMAINING_MINUTES = Math.floor((DURATION % MILLISECONDS_OF_A_HOUR) / MILLISECONDS_OF_A_MINUTE);
-    const REMAINING_SECONDS = Math.floor((DURATION % MILLISECONDS_OF_A_MINUTE) / MILLISECONDS_OF_A_SECOND);
-    
-
-    // Render
-    $('#days').text(REMAINING_DAYS);
-    $('#hours').text(REMAINING_HOURS);
-    $('#minutes').text(REMAINING_MINUTES);
-    $('#seconds').text(REMAINING_SECONDS);
-}
-updateCountdown();
-// Refresh every second
-setInterval(updateCountdown, MILLISECONDS_OF_A_SECOND);
-
-/*******************************************************/
-} )
+   $( document ).ready( function() {
+      var fecha = new Date();
+       var dia = fecha.getDate() + 1;
+       var mes = fecha.getMonth()+1;
+       var anio = fecha.getFullYear();
+       
+       var fechaRestar = new Date(""+mes+"/"+dia+"/"+anio + " "+"00:00:00");
+   
+       /****************************************************************/
+   
+       const MILLISECONDS_OF_A_SECOND = 1000;
+       const MILLISECONDS_OF_A_MINUTE = MILLISECONDS_OF_A_SECOND * 60;
+       const MILLISECONDS_OF_A_HOUR = MILLISECONDS_OF_A_MINUTE * 60;
+       const MILLISECONDS_OF_A_DAY = MILLISECONDS_OF_A_HOUR * 24;
+   
+   /********************************************************/
+   function updateCountdown() {
+       // Calcs
+       const NOW = new Date()
+       const DURATION = fechaRestar - NOW;
+       
+       const REMAINING_DAYS = Math.floor(DURATION / MILLISECONDS_OF_A_DAY);
+       const REMAINING_HOURS = Math.floor((DURATION % MILLISECONDS_OF_A_DAY) / MILLISECONDS_OF_A_HOUR);
+       const REMAINING_MINUTES = Math.floor((DURATION % MILLISECONDS_OF_A_HOUR) / MILLISECONDS_OF_A_MINUTE);
+       const REMAINING_SECONDS = Math.floor((DURATION % MILLISECONDS_OF_A_MINUTE) / MILLISECONDS_OF_A_SECOND);
+       
+   
+       // Render
+       $('#days').text(REMAINING_DAYS);
+       $('#hours').text(REMAINING_HOURS);
+       $('#minutes').text(REMAINING_MINUTES);
+       $('#seconds').text(REMAINING_SECONDS);
+   }
+   updateCountdown();
+   // Refresh every second
+   setInterval(updateCountdown, MILLISECONDS_OF_A_SECOND);
+   
+   /*******************************************************/
+   } )
 </script>
