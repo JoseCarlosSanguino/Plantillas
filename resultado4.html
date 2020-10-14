@@ -150,7 +150,7 @@
          .imgSatisfacion{
          margin-left: 25vh;
          }
-         @media only screen and (min-width: 990px) and (max-width: 1299px) {
+         @media only screen and (min-width: 990px) and (max-width: 1500px) {
          .textoDia{
          margin-top: 8.5vh;margin-left:-6vh;display: flex;
          color:black;font-size: 0.75em;
@@ -708,6 +708,7 @@
    function updateCountdown() {
        // Calcs
        const NOW = new Date()
+
        const DURATION = fechaRestar - NOW;
        
        const REMAINING_DAYS = Math.floor(DURATION / MILLISECONDS_OF_A_DAY);
@@ -715,12 +716,18 @@
        const REMAINING_MINUTES = Math.floor((DURATION % MILLISECONDS_OF_A_HOUR) / MILLISECONDS_OF_A_MINUTE);
        const REMAINING_SECONDS = Math.floor((DURATION % MILLISECONDS_OF_A_MINUTE) / MILLISECONDS_OF_A_SECOND);
        
-   
+        
        // Render
        $('#days').text(REMAINING_DAYS);
        $('#hours').text(REMAINING_HOURS);
        $('#minutes').text(REMAINING_MINUTES);
        $('#seconds').text(REMAINING_SECONDS);
+       if(REMAINING_SECONDS ==0 && REMAINING_MINUTES==0 && REMAINING_HOURS==0 &&  REMAINING_DAYS==0  ){
+        //alert(fechaRestar);
+       
+       fechaRestar.setDate(fechaRestar.getDate() + 1);
+       }
+
    }
    updateCountdown();
    // Refresh every second
