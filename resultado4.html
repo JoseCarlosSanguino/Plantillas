@@ -30,9 +30,7 @@
          .infoEmpresa p{
          color: rgb(89, 94, 97);font-size: 0.75em;line-height:1em;text-align: center;
          }
-         .position{
-         margin-left: -25px;
-         }
+         
          .position2 p:first-child{
          font-size: 1.5em;line-height:1em;
          }
@@ -158,9 +156,7 @@
          font-weight: 700;line-height: 102%;margin-left: 6  0px;top: 100px;
          color:white;position:absolute;font-size: 50px;text-align: justify;
          }
-         .position{
-         margin-left: -50px;
-         }
+         
          }
          @media only screen and (min-width: 601px) and (max-width: 767px) {
          .textImagen p {
@@ -367,10 +363,27 @@
        
         
        // Render
-       $('#days').text(REMAINING_DAYS);
-       $('#hours').text(REMAINING_HOURS);
-       $('#minutes').text(REMAINING_MINUTES);
-       $('#seconds').text(REMAINING_SECONDS);
+       if(REMAINING_DAYS<10){
+       $('#days').text("0"+REMAINING_DAYS);
+       }else{
+        $('#days').text(REMAINING_DAYS);
+       }
+       if(REMAINING_HOURS<10){
+        $('#hours').text("0"+REMAINING_HOURS);
+       }else{
+        $('#hours').text(REMAINING_HOURS);
+       }
+       
+       if(REMAINING_SECONDS<10){
+        $('#seconds').text("0"+REMAINING_SECONDS);
+       }else{
+        $('#seconds').text(REMAINING_SECONDS);
+       }
+       if(REMAINING_MINUTES<10){
+        $('#minutes').text("0"+REMAINING_MINUTES);
+       }else{
+        $('#minutes').text(REMAINING_MINUTES);
+       }
        if(REMAINING_SECONDS ==0 && REMAINING_MINUTES==0 && REMAINING_HOURS==0 &&  REMAINING_DAYS==0  ){
         //alert(fechaRestar);
        
